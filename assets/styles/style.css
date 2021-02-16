@@ -23,12 +23,18 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0 1em 0 1em;
   font-family: 'Poppins', sans-serif;
   color: #0f0f0f;
+  -webkit-animation-name: fade-in-up;
+          animation-name: fade-in-up;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .wrapper {
@@ -50,6 +56,10 @@ ul {
 a {
   text-decoration: none;
   color: #0f0f0f;
+}
+
+a:hover {
+  color: #000;
 }
 
 footer ul {
@@ -146,11 +156,17 @@ footer ul li:last-child {
 }
 
 .action-btn {
-  background-color: azure;
+  background-color: #f6f6f6;
   color: grey;
   font-weight: bold;
   padding: 1em;
   border-radius: 0.5em;
+}
+
+.action-btn:hover {
+  background-color: #f1f1f1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .grid:hover .img-overlay {
@@ -168,7 +184,7 @@ footer ul li:last-child {
 }
 
 .tag {
-  background-color: azure;
+  background-color: #f6f6f6;
   color: grey;
   font-size: 0.6em;
   padding: 0.5em;
