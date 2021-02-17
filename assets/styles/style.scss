@@ -77,6 +77,10 @@ footer {
     .logo {
         font-weight: bold;
         font-size: 1.25em;
+        position: relative;
+    }
+    .logo-container:hover .logo:after {
+        content: '⚡';
     }
 }
 
@@ -114,6 +118,9 @@ footer {
     border-radius: 0 0 5px 5px;
     display: flex;
     justify-content: space-between;
+    h2 {
+        font-size: 1.25em;
+    }
     .details-container {
         width: 60%;
     }
@@ -131,6 +138,15 @@ footer {
     &:hover {
         background-color: #f1f1f1;
         transition: all 0.3s ease-in-out;
+    }
+}
+
+.disabled-btn {
+    color: #5f5f5f;
+    cursor: not-allowed !important;
+    &:hover {
+        background-color: #f6f6f6;
+        color: #5f5f5f;
     }
 }
 
